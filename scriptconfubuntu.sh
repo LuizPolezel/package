@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Atualização do Ubuntu"
+sudo apt-get update -y
+
 echo "Instalação Sophos:"
 wget https://api-cloudstation-us-east-2.prod.hydra.sophos.com/api/download/3f3989c05a7db62d3c2f7327f2815c40/SophosInstall.sh
 sudo chmod 777 SophosInstall.sh
@@ -22,4 +25,3 @@ sudo /opt/pbis/bin/domainjoin-cli join CORP.ENDURANCE.COM
 
 echo "Reiniciando"
 sudo reboot
-
